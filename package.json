@@ -10,16 +10,22 @@
   },
   "dependencies": {
     "next": "16.4.3",
+    "pg": "^8.23.1",
     "react": "19.3.0",
     "react-dom": "19.3.0",
-    "styled-components": "^6.6.0"
+    "reflect-metadata": "^0.2.2",
+    "styled-components": "^6.6.0",
+    "typeorm": "^1.1.2"
   },
   "devDependencies": {
+    "@next/env": "^16.4.3",
     "@types/node": "^20",
+    "@types/pg": "^8.23.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
