@@ -1,0 +1,11 @@
+// use prisma-8
+
+model User {
+	id Int @id @default(autoincrement())
+	first_name VarChar(30)
+	last_name VarChar(60)
+	email VarChar(70) @unique
+	password VarChar(255)
+
+	@@map("users")
+}
