@@ -28,6 +28,12 @@ export const UsersDAO = {
         }).all()
         return results.map(result => assembleUser(result))
     },
+    getUserById: async (userId: number): Promise<User | undefined> => {
+        const result = await userBaseQuery().where({
+            id: userId
+        }).first()
+        return result ? assembleUser(result) : undefined
+    },
     getPasswordByUserId: async (userId: number): Promise<string | undefined> => {
         const result = await db.orm.public.User.select("password").where({
             id: userId

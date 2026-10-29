@@ -42,7 +42,7 @@ export const Auth = {
             throw new HttpError(Response.unauthorized())
         }
     },
-    authorize: (user: User | null) => {
+    authorize: (user: User | undefined) => {
         if (!user) throw new HttpError(Response.unauthorized())
     },
     getUser: async () => {
