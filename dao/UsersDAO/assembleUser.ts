@@ -1,12 +1,12 @@
 import { User } from "@/types/User"
-import { UserBaseRow } from "./userBaseQuery"
+import { UserResult } from "./userBaseQuery"
 
-export const assembleUser = (row: UserBaseRow): User => {
+export const assembleUser = (result: UserResult): User => {
     return {
-        id: row.id,
+        id: result.id,
         name: {
-            first: row.first_name,
-            last: row.last_name
+            first: result.first_name,
+            last: result.last_name
         }
     }
 }
