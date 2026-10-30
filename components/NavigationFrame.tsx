@@ -51,7 +51,9 @@ const LogoSerif = styled.span`
     color: var(--black);
 `
 
-const Content = styled.div``
+const Content = styled.div`
+    width: 100%;
+`
 
 type NavigationFrameProps = {
     children: ReactNode

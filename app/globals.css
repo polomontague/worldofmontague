@@ -16,23 +16,63 @@
 :root{
 	/* Colors */
 	--black: #000000;
+	--black-translucent: rgba(0, 0, 0, 0.9);
+	--very-dark-grey: #111111;
+	--dark-grey: #333333;
+	--grey: #777777;
 	--white: #ffffff;
 
 	/* Fonts */
 	--serif: "Georgia", serif;
 	--sans-serif: "Jost", "Futura", sans-serif;
 	--condensed: "Barlow Condensed", "DIN Condensed", sans-serif;
+	--line-height: 1.8;
+	--font-size: 12px;
+	--font-size-small: 11px;
 
 	/* Sizes */
 	--sidebar-width: 300px;
+	--letter-spacing: 0.09em;
+	--border-radius: 2px;
+	--border-radius-large: 12px;
+	--spacing-very-small: 4px;
+	--spacing-small: 6px;
+	--spacing-medium: 12px;
+	--spacing-large: 18px;
+	--field-size: 32px;
+	--inner-field-size: 24px;
+	--border-width: 1px;
+	--button-font-size: 11px;
+	--icon-size: 14px;
+	--alert-width: 220px;
+	--spinner-size: 18px;
+
+	/* Misc */
+	--blur: 12px;
+	--transition: 0.15s ease-in-out;
+
+	/* Variables used for scaling inputs so they don't zoom on mobile */
+	--font-size-number: 12; /* needs to match --font-size */
+	--field-size-number: 32; /* needs to match --field-size */
+	--spacing-small-number: 6; /* needs to match --spacing-small */
+	--spacing-medium-number: 12; /* needs to match spacing large number */
+	--scale: calc(var(--font-size-number) / 16);
+	--scaled-width-and-height: calc(calc(16 / var(--font-size-number)) * 100%);
+	--scaled-spacing-small: calc(calc(calc(16 / var(--font-size-number)) * var(--spacing-small-number)) *var(--border-width));
+	--scaled-spacing-medium: calc(calc(calc(16 / var(--font-size-number)) * var(--spacing-medium-number)) *var(--border-width));
 }
 
 *{
 	box-sizing: border-box;
 	scrollbar-width: none; /* Firefox */
 	-ms-overflow-style: none;  /* IE and Edge */
-	letter-spacing: 0.09em;
-	line-height: 1.8;
+	letter-spacing: var(--letter-spacing);
+	line-height: var(--line-height);
+}
+
+body{
+	margin: 0;
+	background-color: var(--black);
 }
 
 *::-webkit-scrollbar {
