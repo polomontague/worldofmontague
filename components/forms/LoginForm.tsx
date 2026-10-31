@@ -20,7 +20,7 @@ export const LoginForm = () => {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState("")
     const [cookies, setCookie] = useCookies()
-    const { user, setUser } = useContext(UserContext)
+    const { setUser } = useContext(UserContext)
 
     useEffect(() => {
         setSubmitDisabled(!validate())
@@ -60,7 +60,6 @@ export const LoginForm = () => {
 
     return (
         <Form onSubmit={handleSubmit}>
-            {user?.name.first ?? "name_here"}
             <FieldFrame>
                 <TextInput placeholder="Email..." value={email} onChange={setEmail} />
                 <PasswordInput placeholder="Password..." value={password} onChange={setPassword} />

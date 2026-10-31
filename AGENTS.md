@@ -19,3 +19,11 @@ Do not introduce your own stylistic preferences when my codebase already demonst
 When a change requires departing from my established style, explain why. Keep changes focused and avoid unrelated formatting or stylistic rewrites.
 
 After implementing changes, review the diff for stylistic consistency and run the relevant type checks and linting commands.
+
+## Styling Guidelines
+
+Before creating or modifying any component, read [docs/StylingGuidelines.md](docs/StylingGuidelines.md) and follow it strictly.
+
+These guidelines are mandatory, not suggestions. Every component must match the styles defined there. Do not introduce colors, fonts, sizes, spacing, or other style values that are not specified in the guidelines.
+
+If a component needs styling the guidelines do not cover, ask before inventing new values.

@@ -31,12 +31,12 @@
 	--font-size-small: 11px;
 
 	/* Sizes */
-	--sidebar-width: 300px;
-	--letter-spacing: 0.09em;
-	--border-radius: 2px;
+	--sidebar-width: 300px; /* Width of the sidebar in desktop view */
+	--letter-spacing: 0.09em; /* Spacing in between letters */
+	--border-radius: 2px; /* Border Radius for inputs */
 	--border-radius-large: 12px;
 	--spacing-very-small: 4px;
-	--spacing-small: 6px;
+	--spacing-small: 6px; /* General spacing between objects */
 	--spacing-medium: 12px;
 	--spacing-large: 18px;
 	--field-size: 32px;
